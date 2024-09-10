@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRUD App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300 ">
+    <div class="flex flex-col justify-center">
+
+    <div class=" p-4 w-100 flex flex-col justify-center gap-4 ">
+        <h1 class="text-2xl font-bold mb-4 text-center">User Management</h1>
+        
+        <div class="bg-red-500 flex flex-col p-4 shadow-md rounded mb-4 mx-auto w-[300px]">
+            <h2 class="text-xl font-bold mb-2">Add User</h2>
+            <form id="userForm">
+                <div class="mb-2">
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" class="inputs border p-2 w-full" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-2">
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="text" id="email" class="inputs border p-2 w-full" placeholder="Enter Your gmail">
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Add User</button>
+            </form>
+        </div>
+    </div>
+
+        <div class="bg-white p-4 shadow-md rounded w-[500px] mx-auto">
+            <h2 class="text-xl font-bold mb-2">User List</h2>
+            <ul id="userList" class="space-y-2"></ul>
+        </div>
+    </div>
+    <script defer src="app.js"></script>
+</body>
+</html>
